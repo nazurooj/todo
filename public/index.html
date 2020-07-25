@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<style>
+    body {
+        text-align: center;
+        margin: 0;
+    }
+
+    .div1 {
+        margin-top: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h1 {
+        font-family: cursive;
+        color: rgba(108, 44, 212, 0.603);
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    #item {
+        padding: 4px;
+        height: 30px;
+        width: 20%;
+        border: 3px solid brown;
+        border-radius: 3px;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+
+    #item:focus {
+        border: 3px solid rgb(47, 187, 192);
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    #list {
+        font-size: 27px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .trash {
+        margin: 5px;
+        background-color: rgb(226, 136, 116);
+        color: rgb(19, 18, 18);
+        border-radius: 8px;
+        width: 70px;
+        height: 37px;
+        font-weight: bold;
+        border: thistle;
+        font-family: serif;
+    }
+
+    .edit {
+        background-color: rgba(24, 99, 184, 0.678);
+        color: rgb(255, 255, 255);
+        border-radius: 8px;
+        width: 60px;
+        height: 37px;
+        font-weight: bold;
+        border: thistle;
+        font-family: serif;
+    }
+
+    button {
+        border: thistle;
+        border-radius: 8px;
+        height: 35px;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <div class="div1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h1>To-Do List</h1>
+                    <input id="item" placeholder="Type Something">
+                    <button class="btn-warning text-dark" onclick="addMe()"> Add item</button>
+                    <button class="btn-danger text-light" onclick="delAll()"> Delete All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 my-2 py-2">
+                    <ul id="list" class="py-2">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
